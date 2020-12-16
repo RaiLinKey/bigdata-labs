@@ -1,6 +1,0 @@
-1		Design place		3
-2		Prorammer's room		2
-3		Moscow boss room		1
-4		Painter's room		3
-5		WEB-dev room		1
-6		Prorammer's room 2		1

@@ -1,3 +1,0 @@
-1	Good Corp	Moscow, MoscowCity, 7
-2	Sea Port	Saint-Peterpurg, Nevsky prosp., 11
-3	American Dream	New-York, Manhattan, 13
