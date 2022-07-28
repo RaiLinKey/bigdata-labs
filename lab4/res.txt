@@ -1,0 +1,1378 @@
+(venv) kali@kali:~/mysources/lab4/MR3/lab4$ /bin/bash /home/kali/mysources/lab4/MR3/lab4/runPy.sh
+Requirement already satisfied: pyhdfs in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (0.3.1)
+Requirement already satisfied: requests in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from pyhdfs) (2.27.1)
+Requirement already satisfied: simplejson in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from pyhdfs) (3.17.6)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from requests->pyhdfs) (1.26.9)
+Requirement already satisfied: idna<4,>=2.5 in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from requests->pyhdfs) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from requests->pyhdfs) (2.0.12)
+Requirement already satisfied: certifi>=2017.4.17 in /home/kali/mysources/lab4/venv/lib/python3.8/site-packages (from requests->pyhdfs) (2021.10.8)
+Doing iteration 1 of 3...
+MapRed1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar6332768864461519068/] [] /tmp/streamjob2214836542769211597.jar tmpDir=null
+22/04/25 15:12:35 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:12:35 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:12:36 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:12:36 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:12:36 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:12:36 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0066
+22/04/25 15:12:37 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0066
+22/04/25 15:12:37 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0066/
+22/04/25 15:12:37 INFO mapreduce.Job: Running job: job_1650909462424_0066
+22/04/25 15:12:45 INFO mapreduce.Job: Job job_1650909462424_0066 running in uber mode : false
+22/04/25 15:12:45 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:12:51 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:12:58 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:12:58 INFO mapreduce.Job: Job job_1650909462424_0066 completed successfully
+22/04/25 15:12:58 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=166
+                FILE: Number of bytes written=607260
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=308
+                HDFS: Number of bytes written=76
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8139
+                Total time spent by all reduces in occupied slots (ms)=3829
+                Total time spent by all map tasks (ms)=8139
+                Total time spent by all reduce tasks (ms)=3829
+                Total vcore-milliseconds taken by all map tasks=8139
+                Total vcore-milliseconds taken by all reduce tasks=3829
+                Total megabyte-milliseconds taken by all map tasks=8334336
+                Total megabyte-milliseconds taken by all reduce tasks=3920896
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=124
+                Map output materialized bytes=172
+                Input split bytes=210
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=172
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=363
+                CPU time spent (ms)=2870
+                Physical memory (bytes) snapshot=817004544
+                Virtual memory (bytes) snapshot=5844180992
+                Total committed heap usage (bytes)=534773760
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=98
+        File Output Format Counters 
+                Bytes Written=76
+22/04/25 15:12:58 INFO streaming.StreamJob: Output directory: PBFS/itr_1/mapred1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+rm: `lab4/HITS/auth/': No such file or directory
+Doing iteration 1 of 3...
+MapRed1_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar6777892121780746931/] [] /tmp/streamjob6786452327340933134.jar tmpDir=null
+22/04/25 15:13:03 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:04 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:05 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:13:05 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:13:05 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:13:05 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0067
+22/04/25 15:13:05 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0067
+22/04/25 15:13:05 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0067/
+22/04/25 15:13:05 INFO mapreduce.Job: Running job: job_1650909462424_0067
+22/04/25 15:13:13 INFO mapreduce.Job: Job job_1650909462424_0067 running in uber mode : false
+22/04/25 15:13:13 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:13:20 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:13:27 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:13:27 INFO mapreduce.Job: Job job_1650909462424_0067 completed successfully
+22/04/25 15:13:27 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=24
+                FILE: Number of bytes written=607040
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=340
+                HDFS: Number of bytes written=7
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7856
+                Total time spent by all reduces in occupied slots (ms)=3920
+                Total time spent by all map tasks (ms)=7856
+                Total time spent by all reduce tasks (ms)=3920
+                Total vcore-milliseconds taken by all map tasks=7856
+                Total vcore-milliseconds taken by all reduce tasks=3920
+                Total megabyte-milliseconds taken by all map tasks=8044544
+                Total megabyte-milliseconds taken by all reduce tasks=4014080
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=14
+                Map output materialized bytes=30
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=30
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=302
+                CPU time spent (ms)=2960
+                Physical memory (bytes) snapshot=819073024
+                Virtual memory (bytes) snapshot=5845696512
+                Total committed heap usage (bytes)=530579456
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=114
+        File Output Format Counters 
+                Bytes Written=7
+22/04/25 15:13:27 INFO streaming.StreamJob: Output directory: lab4/HITS/auth/
+Doing iteration 1 of 3...
+MapRed1_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+
+\packageJobJar: [/tmp/hadoop-unjar2535587652917862385/] [] /tmp/streamjob900786779250930424.jar tmpDir=null
+22/04/25 15:13:29 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:30 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:31 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:13:31 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:13:31 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:13:31 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0068
+22/04/25 15:13:31 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0068
+22/04/25 15:13:31 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0068/
+22/04/25 15:13:31 INFO mapreduce.Job: Running job: job_1650909462424_0068
+22/04/25 15:13:40 INFO mapreduce.Job: Job job_1650909462424_0068 running in uber mode : false
+22/04/25 15:13:40 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:13:47 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:13:54 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:13:54 INFO mapreduce.Job: Job job_1650909462424_0068 completed successfully
+22/04/25 15:13:54 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=171
+                FILE: Number of bytes written=604174
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=340
+                HDFS: Number of bytes written=155
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8811
+                Total time spent by all reduces in occupied slots (ms)=3803
+                Total time spent by all map tasks (ms)=8811
+                Total time spent by all reduce tasks (ms)=3803
+                Total vcore-milliseconds taken by all map tasks=8811
+                Total vcore-milliseconds taken by all reduce tasks=3803
+                Total megabyte-milliseconds taken by all map tasks=9022464
+                Total megabyte-milliseconds taken by all reduce tasks=3894272
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=155
+                Map output materialized bytes=177
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=177
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=278
+                CPU time spent (ms)=2990
+                Physical memory (bytes) snapshot=826019840
+                Virtual memory (bytes) snapshot=5837406208
+                Total committed heap usage (bytes)=533725184
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=114
+        File Output Format Counters 
+                Bytes Written=155
+22/04/25 15:13:54 INFO streaming.StreamJob: Output directory: PBFS/itr_1/mapred3
+Doing iteration 1 of 3...
+MapRed2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar4309118613919867414/] [] /tmp/streamjob3360812432682257869.jar tmpDir=null
+22/04/25 15:13:56 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:57 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:13:58 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:13:58 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:13:58 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:13:58 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0069
+22/04/25 15:13:58 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0069
+22/04/25 15:13:58 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0069/
+22/04/25 15:13:58 INFO mapreduce.Job: Running job: job_1650909462424_0069
+22/04/25 15:14:07 INFO mapreduce.Job: Job job_1650909462424_0069 running in uber mode : false
+22/04/25 15:14:07 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:14:14 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:14:20 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:14:21 INFO mapreduce.Job: Job job_1650909462424_0069 completed successfully
+22/04/25 15:14:21 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=448
+                FILE: Number of bytes written=607848
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=459
+                HDFS: Number of bytes written=226
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7899
+                Total time spent by all reduces in occupied slots (ms)=3865
+                Total time spent by all map tasks (ms)=7899
+                Total time spent by all reduce tasks (ms)=3865
+                Total vcore-milliseconds taken by all map tasks=7899
+                Total vcore-milliseconds taken by all reduce tasks=3865
+                Total megabyte-milliseconds taken by all map tasks=8088576
+                Total megabyte-milliseconds taken by all reduce tasks=3957760
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=406
+                Map output materialized bytes=454
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=454
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=315
+                CPU time spent (ms)=3020
+                Physical memory (bytes) snapshot=822833152
+                Virtual memory (bytes) snapshot=5862776832
+                Total committed heap usage (bytes)=532676608
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=233
+        File Output Format Counters 
+                Bytes Written=226
+22/04/25 15:14:21 INFO streaming.StreamJob: Output directory: PBFS/itr_1/mapred4
+Doing iteration 1 of 3...
+MapRed2_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+rm: `lab4/HITS/hub': No such file or directory
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar9122306365669325603/] [] /tmp/streamjob1941612370392854938.jar tmpDir=null
+22/04/25 15:14:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:14:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:14:27 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:14:27 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:14:27 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:14:28 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0070
+22/04/25 15:14:28 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0070
+22/04/25 15:14:28 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0070/
+22/04/25 15:14:28 INFO mapreduce.Job: Running job: job_1650909462424_0070
+22/04/25 15:14:36 INFO mapreduce.Job: Job job_1650909462424_0070 running in uber mode : false
+22/04/25 15:14:36 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:14:42 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:14:48 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:14:49 INFO mapreduce.Job: Job job_1650909462424_0070 completed successfully
+22/04/25 15:14:49 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=50
+                FILE: Number of bytes written=607089
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=565
+                HDFS: Number of bytes written=21
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8026
+                Total time spent by all reduces in occupied slots (ms)=3834
+                Total time spent by all map tasks (ms)=8026
+                Total time spent by all reduce tasks (ms)=3834
+                Total vcore-milliseconds taken by all map tasks=8026
+                Total vcore-milliseconds taken by all reduce tasks=3834
+                Total megabyte-milliseconds taken by all map tasks=8218624
+                Total megabyte-milliseconds taken by all reduce tasks=3926016
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=40
+                Map output materialized bytes=56
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=56
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=311
+                CPU time spent (ms)=2960
+                Physical memory (bytes) snapshot=816316416
+                Virtual memory (bytes) snapshot=5872939008
+                Total committed heap usage (bytes)=531103744
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=339
+        File Output Format Counters 
+                Bytes Written=21
+22/04/25 15:14:49 INFO streaming.StreamJob: Output directory: lab4/HITS/hub/
+Doing iteration 1 of 3...
+MapRed2_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar3539298800213938639/] [] /tmp/streamjob8085729405491274731.jar tmpDir=null
+22/04/25 15:14:52 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:14:52 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:14:53 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:14:53 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:14:53 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:14:53 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0071
+22/04/25 15:14:54 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0071
+22/04/25 15:14:54 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0071/
+22/04/25 15:14:54 INFO mapreduce.Job: Running job: job_1650909462424_0071
+22/04/25 15:15:02 INFO mapreduce.Job: Job job_1650909462424_0071 running in uber mode : false
+22/04/25 15:15:02 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:15:09 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:15:15 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:15:15 INFO mapreduce.Job: Job job_1650909462424_0071 completed successfully
+22/04/25 15:15:15 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=258
+                FILE: Number of bytes written=604324
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=565
+                HDFS: Number of bytes written=242
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8858
+                Total time spent by all reduces in occupied slots (ms)=3748
+                Total time spent by all map tasks (ms)=8858
+                Total time spent by all reduce tasks (ms)=3748
+                Total vcore-milliseconds taken by all map tasks=8858
+                Total vcore-milliseconds taken by all reduce tasks=3748
+                Total megabyte-milliseconds taken by all map tasks=9070592
+                Total megabyte-milliseconds taken by all reduce tasks=3837952
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=242
+                Map output materialized bytes=264
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=264
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=322
+                CPU time spent (ms)=2860
+                Physical memory (bytes) snapshot=806227968
+                Virtual memory (bytes) snapshot=5842677760
+                Total committed heap usage (bytes)=531628032
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=339
+        File Output Format Counters 
+                Bytes Written=242
+22/04/25 15:15:15 INFO streaming.StreamJob: Output directory: PBFS/itr_2/
+Doing iteration 2 of 3...
+MapRed1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar3025969263814501713/] [] /tmp/streamjob168529317670153970.jar tmpDir=null
+22/04/25 15:15:18 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:15:18 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:15:19 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:15:19 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:15:19 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:15:19 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0072
+22/04/25 15:15:20 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0072
+22/04/25 15:15:20 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0072/
+22/04/25 15:15:20 INFO mapreduce.Job: Running job: job_1650909462424_0072
+22/04/25 15:15:29 INFO mapreduce.Job: Job job_1650909462424_0072 running in uber mode : false
+22/04/25 15:15:29 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:15:35 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:15:42 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:15:42 INFO mapreduce.Job: Job job_1650909462424_0072 completed successfully
+22/04/25 15:15:42 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=684
+                FILE: Number of bytes written=608296
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=573
+                HDFS: Number of bytes written=238
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7910
+                Total time spent by all reduces in occupied slots (ms)=3843
+                Total time spent by all map tasks (ms)=7910
+                Total time spent by all reduce tasks (ms)=3843
+                Total vcore-milliseconds taken by all map tasks=7910
+                Total vcore-milliseconds taken by all reduce tasks=3843
+                Total megabyte-milliseconds taken by all map tasks=8099840
+                Total megabyte-milliseconds taken by all reduce tasks=3935232
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=642
+                Map output materialized bytes=690
+                Input split bytes=210
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=690
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=337
+                CPU time spent (ms)=2890
+                Physical memory (bytes) snapshot=820248576
+                Virtual memory (bytes) snapshot=5857435648
+                Total committed heap usage (bytes)=533725184
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=363
+        File Output Format Counters 
+                Bytes Written=238
+22/04/25 15:15:42 INFO streaming.StreamJob: Output directory: PBFS/itr_2/mapred1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Deleted lab4/HITS/auth
+Doing iteration 2 of 3...
+MapRed1_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar5367072540843060038/] [] /tmp/streamjob1855774079700811680.jar tmpDir=null
+22/04/25 15:15:47 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:15:48 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:15:49 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:15:49 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:15:49 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:15:49 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0073
+22/04/25 15:15:49 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0073
+22/04/25 15:15:49 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0073/
+22/04/25 15:15:49 INFO mapreduce.Job: Running job: job_1650909462424_0073
+22/04/25 15:15:58 INFO mapreduce.Job: Job job_1650909462424_0073 running in uber mode : false
+22/04/25 15:15:58 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:16:04 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:16:11 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:16:11 INFO mapreduce.Job: Job job_1650909462424_0073 completed successfully
+22/04/25 15:16:11 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=50
+                FILE: Number of bytes written=607092
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=583
+                HDFS: Number of bytes written=19
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7898
+                Total time spent by all reduces in occupied slots (ms)=3891
+                Total time spent by all map tasks (ms)=7898
+                Total time spent by all reduce tasks (ms)=3891
+                Total vcore-milliseconds taken by all map tasks=7898
+                Total vcore-milliseconds taken by all reduce tasks=3891
+                Total megabyte-milliseconds taken by all map tasks=8087552
+                Total megabyte-milliseconds taken by all reduce tasks=3984384
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=40
+                Map output materialized bytes=56
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=56
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=351
+                CPU time spent (ms)=3010
+                Physical memory (bytes) snapshot=807243776
+                Virtual memory (bytes) snapshot=5844168704
+                Total committed heap usage (bytes)=533200896
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=357
+        File Output Format Counters 
+                Bytes Written=19
+22/04/25 15:16:11 INFO streaming.StreamJob: Output directory: lab4/HITS/auth/
+Doing iteration 2 of 3...
+MapRed1_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar6966871025497844785/] [] /tmp/streamjob5017613748253923810.jar tmpDir=null
+22/04/25 15:16:13 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:16:14 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:16:15 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:16:15 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:16:15 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:16:15 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0074
+22/04/25 15:16:15 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0074
+22/04/25 15:16:15 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0074/
+22/04/25 15:16:15 INFO mapreduce.Job: Running job: job_1650909462424_0074
+22/04/25 15:16:24 INFO mapreduce.Job: Job job_1650909462424_0074 running in uber mode : false
+22/04/25 15:16:24 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:16:31 INFO mapreduce.Job:  map 50% reduce 0%
+22/04/25 15:16:32 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:16:38 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:16:38 INFO mapreduce.Job: Job job_1650909462424_0074 completed successfully
+22/04/25 15:16:38 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=264
+                FILE: Number of bytes written=604360
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=583
+                HDFS: Number of bytes written=248
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8889
+                Total time spent by all reduces in occupied slots (ms)=3857
+                Total time spent by all map tasks (ms)=8889
+                Total time spent by all reduce tasks (ms)=3857
+                Total vcore-milliseconds taken by all map tasks=8889
+                Total vcore-milliseconds taken by all reduce tasks=3857
+                Total megabyte-milliseconds taken by all map tasks=9102336
+                Total megabyte-milliseconds taken by all reduce tasks=3949568
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=248
+                Map output materialized bytes=270
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=270
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=369
+                CPU time spent (ms)=2950
+                Physical memory (bytes) snapshot=823418880
+                Virtual memory (bytes) snapshot=5863079936
+                Total committed heap usage (bytes)=534249472
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=357
+        File Output Format Counters 
+                Bytes Written=248
+22/04/25 15:16:38 INFO streaming.StreamJob: Output directory: PBFS/itr_2/mapred3
+Doing iteration 2 of 3...
+MapRed2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar8210587693138293533/] [] /tmp/streamjob6293634348187361063.jar tmpDir=null
+22/04/25 15:16:40 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:16:41 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:16:42 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:16:42 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:16:42 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:16:42 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0075
+22/04/25 15:16:42 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0075
+22/04/25 15:16:42 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0075/
+22/04/25 15:16:42 INFO mapreduce.Job: Running job: job_1650909462424_0075
+22/04/25 15:16:51 INFO mapreduce.Job: Job job_1650909462424_0075 running in uber mode : false
+22/04/25 15:16:51 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:16:58 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:17:04 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:17:05 INFO mapreduce.Job: Job job_1650909462424_0075 completed successfully
+22/04/25 15:17:05 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=699
+                FILE: Number of bytes written=608350
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=598
+                HDFS: Number of bytes written=236
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7953
+                Total time spent by all reduces in occupied slots (ms)=3848
+                Total time spent by all map tasks (ms)=7953
+                Total time spent by all reduce tasks (ms)=3848
+                Total vcore-milliseconds taken by all map tasks=7953
+                Total vcore-milliseconds taken by all reduce tasks=3848
+                Total megabyte-milliseconds taken by all map tasks=8143872
+                Total megabyte-milliseconds taken by all reduce tasks=3940352
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=657
+                Map output materialized bytes=705
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=705
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=368
+                CPU time spent (ms)=3020
+                Physical memory (bytes) snapshot=819851264
+                Virtual memory (bytes) snapshot=5854244864
+                Total committed heap usage (bytes)=530579456
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=372
+        File Output Format Counters 
+                Bytes Written=236
+22/04/25 15:17:05 INFO streaming.StreamJob: Output directory: PBFS/itr_2/mapred4
+Doing iteration 2 of 3...
+MapRed2_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Deleted lab4/HITS/hub
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar189923757487070367/] [] /tmp/streamjob3980479881914980771.jar tmpDir=null
+22/04/25 15:17:10 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:17:10 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:17:11 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:17:11 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:17:11 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:17:12 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0076
+22/04/25 15:17:12 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0076
+22/04/25 15:17:12 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0076/
+22/04/25 15:17:12 INFO mapreduce.Job: Running job: job_1650909462424_0076
+22/04/25 15:17:20 INFO mapreduce.Job: Job job_1650909462424_0076 running in uber mode : false
+22/04/25 15:17:20 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:17:26 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:17:33 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:17:33 INFO mapreduce.Job: Job job_1650909462424_0076 completed successfully
+22/04/25 15:17:33 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=49
+                FILE: Number of bytes written=607087
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=580
+                HDFS: Number of bytes written=20
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7851
+                Total time spent by all reduces in occupied slots (ms)=3844
+                Total time spent by all map tasks (ms)=7851
+                Total time spent by all reduce tasks (ms)=3844
+                Total vcore-milliseconds taken by all map tasks=7851
+                Total vcore-milliseconds taken by all reduce tasks=3844
+                Total megabyte-milliseconds taken by all map tasks=8039424
+                Total megabyte-milliseconds taken by all reduce tasks=3936256
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=39
+                Map output materialized bytes=55
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=55
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=296
+                CPU time spent (ms)=2910
+                Physical memory (bytes) snapshot=819269632
+                Virtual memory (bytes) snapshot=5868593152
+                Total committed heap usage (bytes)=532676608
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=354
+        File Output Format Counters 
+                Bytes Written=20
+22/04/25 15:17:33 INFO streaming.StreamJob: Output directory: lab4/HITS/hub/
+Doing iteration 2 of 3...
+MapRed2_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar1485355607856800521/] [] /tmp/streamjob2999458016455042722.jar tmpDir=null
+22/04/25 15:17:36 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:17:36 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:17:37 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:17:37 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:17:37 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:17:38 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0077
+22/04/25 15:17:38 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0077
+22/04/25 15:17:38 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0077/
+22/04/25 15:17:38 INFO mapreduce.Job: Running job: job_1650909462424_0077
+22/04/25 15:17:47 INFO mapreduce.Job: Job job_1650909462424_0077 running in uber mode : false
+22/04/25 15:17:47 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:17:53 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:17:59 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:18:00 INFO mapreduce.Job: Job job_1650909462424_0077 completed successfully
+22/04/25 15:18:00 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=264
+                FILE: Number of bytes written=604336
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=580
+                HDFS: Number of bytes written=248
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=9077
+                Total time spent by all reduces in occupied slots (ms)=3838
+                Total time spent by all map tasks (ms)=9077
+                Total time spent by all reduce tasks (ms)=3838
+                Total vcore-milliseconds taken by all map tasks=9077
+                Total vcore-milliseconds taken by all reduce tasks=3838
+                Total megabyte-milliseconds taken by all map tasks=9294848
+                Total megabyte-milliseconds taken by all reduce tasks=3930112
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=248
+                Map output materialized bytes=270
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=270
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=403
+                CPU time spent (ms)=3030
+                Physical memory (bytes) snapshot=813367296
+                Virtual memory (bytes) snapshot=5870034944
+                Total committed heap usage (bytes)=531103744
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=354
+        File Output Format Counters 
+                Bytes Written=248
+22/04/25 15:18:00 INFO streaming.StreamJob: Output directory: PBFS/itr_3/
+Doing iteration 3 of 3...
+MapRed1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar2950569462707584361/] [] /tmp/streamjob7588096569084552361.jar tmpDir=null
+22/04/25 15:18:03 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:18:03 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:18:04 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:18:04 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:18:04 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:18:05 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0078
+22/04/25 15:18:05 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0078
+22/04/25 15:18:05 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0078/
+22/04/25 15:18:05 INFO mapreduce.Job: Running job: job_1650909462424_0078
+22/04/25 15:18:13 INFO mapreduce.Job: Job job_1650909462424_0078 running in uber mode : false
+22/04/25 15:18:13 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:18:19 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:18:26 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:18:27 INFO mapreduce.Job: Job job_1650909462424_0078 completed successfully
+22/04/25 15:18:27 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=699
+                FILE: Number of bytes written=608326
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=582
+                HDFS: Number of bytes written=236
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7873
+                Total time spent by all reduces in occupied slots (ms)=4216
+                Total time spent by all map tasks (ms)=7873
+                Total time spent by all reduce tasks (ms)=4216
+                Total vcore-milliseconds taken by all map tasks=7873
+                Total vcore-milliseconds taken by all reduce tasks=4216
+                Total megabyte-milliseconds taken by all map tasks=8061952
+                Total megabyte-milliseconds taken by all reduce tasks=4317184
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=657
+                Map output materialized bytes=705
+                Input split bytes=210
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=705
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=301
+                CPU time spent (ms)=3350
+                Physical memory (bytes) snapshot=824156160
+                Virtual memory (bytes) snapshot=5835943936
+                Total committed heap usage (bytes)=535298048
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=372
+        File Output Format Counters 
+                Bytes Written=236
+22/04/25 15:18:27 INFO streaming.StreamJob: Output directory: PBFS/itr_3/mapred1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Deleted lab4/HITS/auth
+Doing iteration 3 of 3...
+MapRed1_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar2926199958023100221/] [] /tmp/streamjob6638619468305100743.jar tmpDir=null
+22/04/25 15:18:33 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:18:33 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:18:34 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:18:34 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:18:34 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:18:34 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0079
+22/04/25 15:18:35 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0079
+22/04/25 15:18:35 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0079/
+22/04/25 15:18:35 INFO mapreduce.Job: Running job: job_1650909462424_0079
+22/04/25 15:18:43 INFO mapreduce.Job: Job job_1650909462424_0079 running in uber mode : false
+22/04/25 15:18:43 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:18:49 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:18:56 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:18:56 INFO mapreduce.Job: Job job_1650909462424_0079 completed successfully
+22/04/25 15:18:56 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=50
+                FILE: Number of bytes written=607092
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=580
+                HDFS: Number of bytes written=20
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8101
+                Total time spent by all reduces in occupied slots (ms)=3980
+                Total time spent by all map tasks (ms)=8101
+                Total time spent by all reduce tasks (ms)=3980
+                Total vcore-milliseconds taken by all map tasks=8101
+                Total vcore-milliseconds taken by all reduce tasks=3980
+                Total megabyte-milliseconds taken by all map tasks=8295424
+                Total megabyte-milliseconds taken by all reduce tasks=4075520
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=40
+                Map output materialized bytes=56
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=56
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=279
+                CPU time spent (ms)=2860
+                Physical memory (bytes) snapshot=813375488
+                Virtual memory (bytes) snapshot=5858119680
+                Total committed heap usage (bytes)=532676608
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=354
+        File Output Format Counters 
+                Bytes Written=20
+22/04/25 15:18:56 INFO streaming.StreamJob: Output directory: lab4/HITS/auth/
+Doing iteration 3 of 3...
+MapRed1_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar7289054357077875448/] [] /tmp/streamjob5192920848164200275.jar tmpDir=null
+22/04/25 15:18:59 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:18:59 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:19:00 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:19:00 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:19:00 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:19:00 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0080
+22/04/25 15:19:01 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0080
+22/04/25 15:19:01 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0080/
+22/04/25 15:19:01 INFO mapreduce.Job: Running job: job_1650909462424_0080
+22/04/25 15:19:10 INFO mapreduce.Job: Job job_1650909462424_0080 running in uber mode : false
+22/04/25 15:19:10 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:19:17 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:19:23 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:19:23 INFO mapreduce.Job: Job job_1650909462424_0080 completed successfully
+22/04/25 15:19:23 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=266
+                FILE: Number of bytes written=604364
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=580
+                HDFS: Number of bytes written=250
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8813
+                Total time spent by all reduces in occupied slots (ms)=3822
+                Total time spent by all map tasks (ms)=8813
+                Total time spent by all reduce tasks (ms)=3822
+                Total vcore-milliseconds taken by all map tasks=8813
+                Total vcore-milliseconds taken by all reduce tasks=3822
+                Total megabyte-milliseconds taken by all map tasks=9024512
+                Total megabyte-milliseconds taken by all reduce tasks=3913728
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=250
+                Map output materialized bytes=272
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=272
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=315
+                CPU time spent (ms)=2850
+                Physical memory (bytes) snapshot=817102848
+                Virtual memory (bytes) snapshot=5851799552
+                Total committed heap usage (bytes)=532152320
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=354
+        File Output Format Counters 
+                Bytes Written=250
+22/04/25 15:19:23 INFO streaming.StreamJob: Output directory: PBFS/itr_3/mapred3
+Doing iteration 3 of 3...
+MapRed2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar4477203045909585327/] [] /tmp/streamjob8444813830175695545.jar tmpDir=null
+22/04/25 15:19:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:19:26 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:19:27 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:19:27 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:19:27 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:19:27 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0081
+22/04/25 15:19:28 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0081
+22/04/25 15:19:28 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0081/
+22/04/25 15:19:28 INFO mapreduce.Job: Running job: job_1650909462424_0081
+22/04/25 15:19:37 INFO mapreduce.Job: Job job_1650909462424_0081 running in uber mode : false
+22/04/25 15:19:37 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:19:44 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:19:50 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:19:50 INFO mapreduce.Job: Job job_1650909462424_0081 completed successfully
+22/04/25 15:19:50 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=704
+                FILE: Number of bytes written=608360
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=601
+                HDFS: Number of bytes written=238
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8618
+                Total time spent by all reduces in occupied slots (ms)=4012
+                Total time spent by all map tasks (ms)=8618
+                Total time spent by all reduce tasks (ms)=4012
+                Total vcore-milliseconds taken by all map tasks=8618
+                Total vcore-milliseconds taken by all reduce tasks=4012
+                Total megabyte-milliseconds taken by all map tasks=8824832
+                Total megabyte-milliseconds taken by all reduce tasks=4108288
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=18
+                Map output bytes=662
+                Map output materialized bytes=710
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=710
+                Reduce input records=18
+                Reduce output records=5
+                Spilled Records=36
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=340
+                CPU time spent (ms)=3370
+                Physical memory (bytes) snapshot=828223488
+                Virtual memory (bytes) snapshot=5872570368
+                Total committed heap usage (bytes)=534773760
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=375
+        File Output Format Counters 
+                Bytes Written=238
+22/04/25 15:19:50 INFO streaming.StreamJob: Output directory: PBFS/itr_3/mapred4
+Doing iteration 3 of 3...
+MapRed2_1
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Deleted lab4/HITS/hub
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar7082305230764897252/] [] /tmp/streamjob5436263120199378848.jar tmpDir=null
+22/04/25 15:19:55 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:19:56 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:19:57 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:19:57 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:19:57 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:19:57 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0082
+22/04/25 15:19:57 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0082
+22/04/25 15:19:57 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0082/
+22/04/25 15:19:57 INFO mapreduce.Job: Running job: job_1650909462424_0082
+22/04/25 15:20:04 INFO mapreduce.Job: Job job_1650909462424_0082 running in uber mode : false
+22/04/25 15:20:04 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:20:11 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:20:18 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:20:18 INFO mapreduce.Job: Job job_1650909462424_0082 completed successfully
+22/04/25 15:20:18 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=50
+                FILE: Number of bytes written=607089
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=583
+                HDFS: Number of bytes written=20
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=7836
+                Total time spent by all reduces in occupied slots (ms)=3846
+                Total time spent by all map tasks (ms)=7836
+                Total time spent by all reduce tasks (ms)=3846
+                Total vcore-milliseconds taken by all map tasks=7836
+                Total vcore-milliseconds taken by all reduce tasks=3846
+                Total megabyte-milliseconds taken by all map tasks=8024064
+                Total megabyte-milliseconds taken by all reduce tasks=3938304
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=2
+                Map output bytes=40
+                Map output materialized bytes=56
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=1
+                Reduce shuffle bytes=56
+                Reduce input records=2
+                Reduce output records=1
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=388
+                CPU time spent (ms)=2940
+                Physical memory (bytes) snapshot=818159616
+                Virtual memory (bytes) snapshot=5849759744
+                Total committed heap usage (bytes)=533200896
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=357
+        File Output Format Counters 
+                Bytes Written=20
+22/04/25 15:20:18 INFO streaming.StreamJob: Output directory: lab4/HITS/hub/
+Doing iteration 3 of 3...
+MapRed2_2
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+packageJobJar: [/tmp/hadoop-unjar4600388322071061356/] [] /tmp/streamjob2750278550678437156.jar tmpDir=null
+22/04/25 15:20:20 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:20:21 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+22/04/25 15:20:22 INFO mapred.FileInputFormat: Total input files to process : 1
+22/04/25 15:20:22 INFO mapreduce.JobSubmitter: number of splits:2
+22/04/25 15:20:22 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+22/04/25 15:20:22 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1650909462424_0083
+22/04/25 15:20:22 INFO impl.YarnClientImpl: Submitted application application_1650909462424_0083
+22/04/25 15:20:22 INFO mapreduce.Job: The url to track the job: http://kali:8088/proxy/application_1650909462424_0083/
+22/04/25 15:20:22 INFO mapreduce.Job: Running job: job_1650909462424_0083
+22/04/25 15:20:31 INFO mapreduce.Job: Job job_1650909462424_0083 running in uber mode : false
+22/04/25 15:20:31 INFO mapreduce.Job:  map 0% reduce 0%
+22/04/25 15:20:38 INFO mapreduce.Job:  map 100% reduce 0%
+22/04/25 15:20:44 INFO mapreduce.Job:  map 100% reduce 100%
+22/04/25 15:20:45 INFO mapreduce.Job: Job job_1650909462424_0083 completed successfully
+22/04/25 15:20:45 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=265
+                FILE: Number of bytes written=604338
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=583
+                HDFS: Number of bytes written=249
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters 
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=8764
+                Total time spent by all reduces in occupied slots (ms)=3804
+                Total time spent by all map tasks (ms)=8764
+                Total time spent by all reduce tasks (ms)=3804
+                Total vcore-milliseconds taken by all map tasks=8764
+                Total vcore-milliseconds taken by all reduce tasks=3804
+                Total megabyte-milliseconds taken by all map tasks=8974336
+                Total megabyte-milliseconds taken by all reduce tasks=3895296
+        Map-Reduce Framework
+                Map input records=5
+                Map output records=5
+                Map output bytes=249
+                Map output materialized bytes=271
+                Input split bytes=226
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=5
+                Reduce shuffle bytes=271
+                Reduce input records=5
+                Reduce output records=5
+                Spilled Records=10
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=303
+                CPU time spent (ms)=2900
+                Physical memory (bytes) snapshot=806154240
+                Virtual memory (bytes) snapshot=5851443200
+                Total committed heap usage (bytes)=532676608
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=357
+        File Output Format Counters 
+                Bytes Written=249
+22/04/25 15:20:45 INFO streaming.StreamJob: Output directory: PBFS/itr_4/
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+1       ((5,4,2));0.25500209004627167;0.5303016004229063
+2       ((3,1,4));0.5477822675068058;0.39221431278543184
+3       ((5,2));0.4659297447759038;0.4038182865364801
+4       ((3,1));0.34315096067955075;0.2657309988990056
+5       ((5,3,2));0.5477822675068058;0.5755570980519947

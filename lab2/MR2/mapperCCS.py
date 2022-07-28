@@ -11,7 +11,7 @@ for _line in sys.stdin:
                 continue
             else:
                 stripe[basket[c_item]].update({basket[c_item2]: 1})
-        stripe[basket[c_item]] = dict(sorted(stripe[basket[c_item]].items(), key=operator.itemgetter(0)))
+        # stripe[basket[c_item]] = dict(sorted(stripe[basket[c_item]].items(), key=operator.itemgetter(0)))
         # print(stripe)
         # data_string = str(stripe[basket[c_item]]).replace("'", "").replace("{", "").replace("}", "")
         print(f"{basket[c_item]}\t{stripe[basket[c_item]]}")
